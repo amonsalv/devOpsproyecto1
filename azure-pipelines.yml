@@ -10,12 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-  - stage:
-    jobs:
-     - job:
-       steps:
-         - script: pwd
-           displayName: 'Mostrar en donde estoy cuando ejecuto el pipeline'
+- stage:
+  jobs:
+  - job:
+    steps:
+    - script: pwd
+      displayName: 'Mostrar en donde estoy cuando ejecuto el pipeline'
 
-         - script: ls
-           displayName: 'Mostrar archivos en la maquina'
+    - script: ls
+      displayName: 'Mostrar archivos en la maquina'
